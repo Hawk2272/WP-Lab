@@ -17,6 +17,5 @@ function validateForm() {
   } else if (z == "") {
     alert("Email must be filled out");
     return false;
-  }
-  
+  }  
 }
