@@ -1,65 +1,146 @@
 <!DOCTYPE html>
 <head>
-    <title>Reservation page</title>
-</head>
-<body>
-    <p>
-        <div style="text-align: center">
-        <img src="Images/download (1).jfif" alt="Restaurant Logo">
-        </div>
-    </p>
+    <title>Home page</title>
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Bonheur Royale' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+  </head>  
+<input type="checkbox" id="checkbox">
+<label class="btn" for="checkbox"><i class="fa fa-bars"></i> <span>Menu</span></label>
+<div class="sidebar">
+    <ul>
+        <a href="index.html"><li class="sidebar-text"><i class="fa fa-home" aria-hidden="true"></i>Home page</li></a>
+        <a href="menu1.html"><li class="sidebar-text"><i class="fa fa-cutlery"></i>Menu</li></a>
+        <a href="contact.html"><li class="sidebar-text"><i class="fa fa-send"></i>Contact us</li></a>
+        <a href="reservation.html"><li class="sidebar-text"><i class="fa fa-bookmark"></i>Reservation</li></a>
+        </ul>
+</div>
+<div class="hero-image">
+  <p>
     <div style="text-align: center">
-      <a href="index.html" class="home-link">
-          <div class="navbar-logo"></div>
-          <h1>The Pink door</h1>
-        </a>
-      </div>
-          <ul>
-            <li><a href="index.html">Home page</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="reservation.html"> Make a reservation</a></li>
-          </ul>
+      <br>
+      <a href="menu1.html">
+    <img class="ellipse" img src="Images/e3caab4454ae840f3151c01ce3495c65.jpg" alt="Restaurant Logo">
+    </a>  
+    </div>
+  </p>
+
+    <header id="navbar">
+        <div class="restaurant-head">
+            <h1 class="header-heading">The Pink door</h1>
+        </div>
+        </nav>
+      </header>
+    <div>
+      <div class="menu-item">
+        <div class="menu-item-text">
+            <p class="menu-item-description">
+              Seems like we have caught your eye! Make a reservation!!
+              </p>
+              <form id="form1">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="email">Email: </label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="time">Time of choice for the reservation:</label>
+                <select id="time" name="time">
+                  <option value="10:00">10.00 AM</option>
+                  <option value="10:30">10.30 AM</option>
+                  <option value="11:00">11.00 AM</option>
+                  <option value="11:30">11.30 AM</option>
+                  <option value="12:00">12.00 PM</option>
+                  <option value="12:30">12.30 PM</option>
+                  <option value="13:00">01.00 PM</option>
+                  <option value="13:30">01.30 PM</option>
+                  <option value="14:00">02.00 PM</option>
+                  <option value="14:30">02.30 PM</option>
+                  <option value="15:00">03.00 PM</option>
+                  <option value="15:30">03.30 PM</option>
+                  <option value="16:00">04.00 PM</option>
+                  <option value="16:30">04.30 PM</option>
+                  <option value="17:00">05.00 PM</option>
+                  <option value="17:30">05.30 PM</option>
+                  <option value="18:00">06.00 PM</option>
+                  <option value="18:30">06.30 PM</option>
+                  <option value="19:00" selected="">07.00 PM</option>
+                  <option value="19:30">07.30 PM</option>
+                  <option value="20:00">08.00 PM</option>
+                  <option value="20:30">08.30 PM</option>
+                  <option value="21:00">09.00 PM</option>
+                </select><br><br>
+                <label for="message">Any allergies or special arrangements that have to be made?</label><br>
+                <textarea rows = "10" cols = "60" name = "description">
+                  Enter message here...
+                </textarea><br><br>
+                <button type="submit" form="form1" value="Submit">Submit</button>
+              </form>
+            </p>
+        </div>
+    </div>    
+    </div>
+</body>
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+    <div>
+      <h3 class="header-heading1">The Pink door</h3>
+    </div>
+    <p class="footer-links">
+      <a href="#" class="link-1">Home</a>
       
-      <h1>Seems like we have got your eye!</h1>
-      <h1>Make a reservation!</h1>
-      <form id="form1">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="email">Email: </label><br>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="time">Time of choice for the reservation:</label>
-        <select id="time" name="time">
-          <option value="10:00">10.00 AM</option>
-          <option value="10:30">10.30 AM</option>
-          <option value="11:00">11.00 AM</option>
-          <option value="11:30">11.30 AM</option>
-          <option value="12:00">12.00 PM</option>
-          <option value="12:30">12.30 PM</option>
-          <option value="13:00">01.00 PM</option>
-          <option value="13:30">01.30 PM</option>
-          <option value="14:00">02.00 PM</option>
-          <option value="14:30">02.30 PM</option>
-          <option value="15:00">03.00 PM</option>
-          <option value="15:30">03.30 PM</option>
-          <option value="16:00">04.00 PM</option>
-          <option value="16:30">04.30 PM</option>
-          <option value="17:00">05.00 PM</option>
-          <option value="17:30">05.30 PM</option>
-          <option value="18:00">06.00 PM</option>
-          <option value="18:30">06.30 PM</option>
-          <option value="19:00" selected="">07.00 PM</option>
-          <option value="19:30">07.30 PM</option>
-          <option value="20:00">08.00 PM</option>
-          <option value="20:30">08.30 PM</option>
-          <option value="21:00">09.00 PM</option>
-        </select><br><br>
-        <label for="message">Any allergies or special arrangements that have to be made?</label><br>
-        <textarea rows = "10" cols = "60" name = "description">
-          Enter message here...
-        </textarea><br><br>
-        <button type="submit" form="form1" value="Submit">Submit</button>
-      </form>
+      <a href="#">Menu</a>
+    
+      <a href="#">Contact</a>
+    
+      <a href="#">Reservation</a>
       
+    </p>
+
+    <p class="footer-company-name">The Pink door © 2015</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+1.555.555.5555</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@company.com">support@company.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>About the restaurant</span>
+      Organizer, Gaurav Chawla,opened the first Pink Door Restaurant in Los Alamitos, California on September 27, 2016. Today, there are 37 areas all through Arizona, California, Illinois, Louisiana, Nevada, Oregon, Tennessee, and Washington.
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
